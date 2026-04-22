@@ -1,6 +1,6 @@
 /**
  * 資料DL完了ページ: PDF パスは body[data-pdf-path] で差し替え可能。
- * 表示後に自動ダウンロードを試みる（失敗しても手動リンクが残る）。
+ * ページ表示時はリンク設定のみ行い、ダウンロードは手動ボタン操作で実行する。
  */
 (function () {
   function run() {
@@ -14,25 +14,6 @@
         link.setAttribute("download", name);
       }
     }
-
-    window.setTimeout(function () {
-      try {
-        var a = document.createElement("a");
-        a.href = path;
-        a.setAttribute("download", name);
-        a.rel = "noopener";
-        a.style.position = "absolute";
-        a.style.width = "0";
-        a.style.height = "0";
-        a.style.opacity = "0";
-        a.setAttribute("aria-hidden", "true");
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-      } catch (e) {
-        /* 手動のダウンロードボタンに任せる */
-      }
-    }, 400);
   }
 
   if (document.readyState === "loading") {
