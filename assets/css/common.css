@@ -1141,8 +1141,9 @@ img {
 .values__cell--head {
   background-color: #fff;
   font-size: 2.5rem;
-  font-weight: 200;
+  font-weight: 700;
   line-height: 1.5;
+  text-align: center;
   color: #000;
   border-right: 1px solid #000;
   border-bottom-color: #fff;
@@ -2088,6 +2089,7 @@ body.subpage {
   .values__cell--head {
     background-color: #fff;
     font-size: 1.8rem;
+    font-weight: 700;
     text-align: center;
     color: #000;
     border-bottom: 1px solid #fff;
