@@ -12,11 +12,7 @@
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/common.css">
 </head>
-<body
-  class="subpage"
-  data-pdf-path="/assets/pdf/neo_acc_service_document_20260420FIX.pdf"
-  data-pdf-filename="neo_acc_service_document_20260420FIX.pdf"
->
+<body class="subpage">
   <header class="header">
     <div class="header__inner">
       <a class="header__logo" href="/" aria-label="ホームへ">
@@ -38,7 +34,12 @@
         </div>
 
         <div class="dl-pdf-actions">
-          <a href="https://share.cast-er.com/p/cast-er/neo-accounting">資料をダウンロードする</a>
+          <a
+            id="js-dl-pdf-link"
+            class="dl-pdf__btn"
+            href="https://share.cast-er.com/p/cast-er/neo-accounting"
+          >資料をダウンロードする</a>
+          <p class="dl-pdf__note" role="note">ページが表示されない場合は、上記ボタンをクリックしてください。</p>
         </div>
 
         <div class="subpage__actions subpage__actions--spaced">

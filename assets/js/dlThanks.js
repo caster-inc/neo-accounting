@@ -1,17 +1,24 @@
 /**
- * 資料DL完了ページ: PDF パスは body[data-pdf-path] で差し替え可能。
- * ページ表示時はリンク設定のみ行い、ダウンロードは手動ボタン操作で実行する。
+ * 資料DL完了ページ
+ * - body[data-pdf-path] がある場合: そのURLを href にし、data-pdf-filename があれば download 属性を付与（従来の PDF 直ダウンロード）
+ * - data-pdf-path がない場合: マークアップの href のまま（同じタブで遷移。download は付与しない）
  */
 (function () {
   function run() {
     var body = document.body;
-    var path = body.getAttribute("data-pdf-path") || "/assets/pdf/neo_acc_service_document_20260420FIX.pdf";
-    var name = body.getAttribute("data-pdf-filename") || "neo_acc_service_document_20260420FIX.pdf";
+    var path = body.getAttribute("data-pdf-path");
     var link = document.getElementById("js-dl-pdf-link");
     if (link) {
-      link.setAttribute("href", path);
-      if (name) {
-        link.setAttribute("download", name);
+      if (path) {
+        link.setAttribute("href", path);
+        var name = body.getAttribute("data-pdf-filename");
+        if (name) {
+          link.setAttribute("download", name);
+        } else {
+          link.removeAttribute("download");
+        }
+      } else {
+        link.removeAttribute("download");
       }
     }
   }
