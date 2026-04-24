@@ -9,14 +9,14 @@
   <meta property="og:site_name" content="NEO Accounting">
   <meta property="og:title" content="NEO Accounting">
   <meta property="og:description" content="人とAIの「ハイブリッド経理」をあなたの組織へ実装します">
-  <meta property="og:url" content="/">
-  <meta property="og:image" content="/assets/img/snsimg.png">
+  <meta property="og:url" content="https://neo-accounting.cast-er.com/">
+  <meta property="og:image" content="https://neo-accounting.cast-er.com/assets/img/snsimg.png">
   <meta property="og:image:alt" content="NEO Accounting">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="NEO Accounting">
   <meta name="twitter:description" content="人とAIの「ハイブリッド経理」をあなたの組織へ実装します">
-  <meta name="twitter:image" content="/assets/img/snsimg.png">
+  <meta name="twitter:image" content="https://neo-accounting.cast-er.com/assets/img/snsimg.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=REM:wght@700;900&display=swap" rel="stylesheet">
@@ -36,6 +36,7 @@
     </div>
   </header>
 
+  <main>
   <section class="fv" aria-labelledby="fv-heading">
     <div class="fv__inner">
       <div class="fv__content">
@@ -293,7 +294,7 @@
       </header>
 
       <div class="step__stack" data-step-accordion>
-        <article class="step__panel">
+        <div class="step__panel">
           <div class="step__panel-head">
             <span class="step__badge" aria-hidden="true">1</span>
             <button type="button" class="step__trigger" aria-expanded="false" aria-controls="step-content-1" id="step-label-1">
@@ -313,13 +314,13 @@
               <li>アクセス制御：証憑ストレージ、Slack、会計ソフトの相互連携とセキュリティ確認</li>
             </ul>
           </div>
-        </article>
+        </div>
 
         <div class="step__connector" aria-hidden="true">
           <img class="step__connector-tri" src="/assets/img/step_tri.png" width="310" height="54" alt="" decoding="async">
         </div>
 
-        <article class="step__panel">
+        <div class="step__panel">
           <div class="step__panel-head">
             <span class="step__badge" aria-hidden="true">2</span>
             <button type="button" class="step__trigger" aria-expanded="false" aria-controls="step-content-2" id="step-label-2">
@@ -339,13 +340,13 @@
               <li>コミュニケーション設計：Slackでのログ通知形式や、不備があった際のボットからの質問フローを構築。</li>
             </ul>
           </div>
-        </article>
+        </div>
 
         <div class="step__connector" aria-hidden="true">
           <img class="step__connector-tri" src="/assets/img/step_tri.png" width="310" height="54" alt="" decoding="async">
         </div>
 
-        <article class="step__panel">
+        <div class="step__panel">
           <div class="step__panel-head">
             <span class="step__badge" aria-hidden="true">3</span>
             <button type="button" class="step__trigger" aria-expanded="false" aria-controls="step-content-3" id="step-label-3">
@@ -365,13 +366,13 @@
               <li>プロンプトの最適化：精度が低い項目に対し、10年の知見を活かした指示（プロンプト）の微調整。</li>
             </ul>
           </div>
-        </article>
+        </div>
 
         <div class="step__connector" aria-hidden="true">
           <img class="step__connector-tri" src="/assets/img/step_tri.png" width="310" height="54" alt="" decoding="async">
         </div>
 
-        <article class="step__panel">
+        <div class="step__panel">
           <div class="step__panel-head">
             <span class="step__badge" aria-hidden="true">4</span>
             <button type="button" class="step__trigger" aria-expanded="false" aria-controls="step-content-4" id="step-label-4">
@@ -387,17 +388,17 @@
             <div class="step__rule" aria-hidden="true"></div>
             <ul class="step__list">
               <li>AIエージェントの自律処理：証憑が届き次第、AIがリアルタイムでfreeeへ仕訳を新規登録。</li>
-              <li>Slackライブログの稼働：AIの作業工程がSlackへ常時出力され、ブラックボックス化を防止。/li>
+              <li>Slackライブログの稼働：AIの作業工程がSlackへ常時出力され、ブラックボックス化を防止。</li>
               <li>最終検収：AIのログと作成された試算表をキャスターの担当者が確認し、月次を完結。</li>
             </ul>
           </div>
-        </article>
+        </div>
 
         <div class="step__connector" aria-hidden="true">
           <img class="step__connector-tri" src="/assets/img/step_tri.png" width="310" height="54" alt="" decoding="async">
         </div>
 
-        <article class="step__panel">
+        <div class="step__panel">
           <div class="step__panel-head">
             <span class="step__badge" aria-hidden="true">5</span>
             <button type="button" class="step__trigger" aria-expanded="false" aria-controls="step-content-5" id="step-label-5">
@@ -417,7 +418,7 @@
               <li>業務プロセスの再設計：AIが処理しやすい証憑回収フローへの改善提案など、DXの観点から効率化を加速。</li>
             </ul>
           </div>
-        </article>
+        </div>
       </div>
     </div>
   </section>
@@ -494,18 +495,18 @@
       </header>
 
       <div class="values__matrix">
-        <article class="values__card">
+        <div class="values__card">
           <p class="values__cell values__cell--head">10年の知見による<br>「業務の構造化・標準化」</p>
           <p class="values__cell values__cell--body">経理受託10年の知見をもとに、AIを動かす以前にまずは「正しい業務の型」を作ります。</p>
-        </article>
-        <article class="values__card">
+        </div>
+        <div class="values__card">
           <p class="values__cell values__cell--head">自律型AIエージェントへ<br>「思考プロセスを移植」</p>
           <p class="values__cell values__cell--body">経理の専門知識とAIエンジニアリングを融合し、業務ロジックを正確に移植します。</p>
-        </article>
-        <article class="values__card">
+        </div>
+        <div class="values__card">
           <p class="values__cell values__cell--head">「人」による戦略的チェック</p>
           <p class="values__cell values__cell--body">全工程をAIに丸投げするのではなく、重要局面や例外判断に「人の目」を入れる検収フローを的確に設計・組み込みます。</p>
-        </article>
+        </div>
       </div>
 
       <div class="values__hero">
@@ -556,7 +557,7 @@
       <p class="plan__detail-label">▼料金詳細（全て税抜表記）</p>
 
       <div class="plan__cards">
-        <article class="plan__card">
+        <div class="plan__card">
           <p class="plan__tab plan__tab--left">オンボーディング期間</p>
           <div class="plan__card-inner">
             <div class="plan__block">
@@ -569,9 +570,9 @@
               <p class="plan__block-note">(従量課金)</p>
             </div>
           </div>
-        </article>
+        </div>
 
-        <article class="plan__card">
+        <div class="plan__card">
           <p class="plan__tab plan__tab--right plan__tab--teal">オンボーディング終了後</p>
           <div class="plan__card-inner">
             <div class="plan__block">
@@ -594,7 +595,7 @@
               </div>
             </div>
           </div>
-        </article>
+        </div>
       </div>
     </div>
   </section>
@@ -609,10 +610,11 @@
       </div>
     </div>
   </section>
+  </main>
 
   <footer class="site-footer">
     <div class="site-footer__inner section-inner">
-      <p class="site-footer__copy"><small>© 2026 AI Accounting Inc.</small></p>
+      <p class="site-footer__copy"><small>Copyright © Caster Co.Ltd. All rights reserved.</small></p>
     </div>
   </footer>
 
